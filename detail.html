@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Qerawa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="css/bootstrap.min.css" rel="stylesheet"></link>
+  <link href="css/style.css" rel="stylesheet"></link>
+  <link href="reset.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+
+  <link rel="stylesheet" href="css/jquery.jqzoom.css" type="text/css">
+    <script src="js/jquery-1.5.js"></script>
+    <script src="js/jquery.jqzoom-core.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+</head>
+
+
+
+<body>
+<!-- NAVBAR   -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-header">
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    <a class="navbar-brand" href="index.html"> <img src="image/logo.png" class="img-responsive"></a>
+    </div>
+<!-- KATEGORI -->
+<!--     <a href="#menu" id="toggle"><span></span></a>
+
+    <div id="menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+ -->
+
+
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+          <ul class="dropdown-menu koloko" style="text-transform: none;">
+            <li><a href="katalog.html">Kerajinan</a></li>
+            <li><a href="katalog.html">Perabotan </a></li>
+            <li><a href="katalog.html">Dasar Kain Dan Fashion</a></li>
+            <li><a href="katalog.html">Kuliner</a></li>
+            <li><a href="katalog.html">Kesehatan</a></li>
+          </ul>
+        </li>
+      </ul>    
+      <form class="navbar-form navbar-left" role="search" id="search">
+            <div class="input-group"  >
+              <input type="text" placeholder="Apa Yang Anda Cari Hari Ini?" class="form-control" style="border-radius: 0; font-size: 16px" />
+              <span class="input-group-btn">
+                <button id="search" class="btn btn-primary btn-block" ><span class="glyphicon glyphicon-search"></span></button>
+              </span>
+            </div>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <!-- <li>  -->
+          <a href="daftar.html"> <button class="btn btnatas btn-primary">Daftar</button></a> 
+          <a href="#myModalMasuk"> <button class="btn btnatas btn-success" data-toggle="modal" data-target="#myModalMasuk">Masuk</button></a> 
+          
+          <!-- <div class="dropdown"> -->
+          <button data-toggle="dropdown" id="dLabel" data-target="#" href="/page.html" class="btn btncart btn-default"> <span class="badge-cart">4</span><span class="glyphicon glyphicon-shopping-cart"></span>Keranjang</button>
+
+
+              <ul class="dropdown-menu notifications" role="menu" aria-labelledby="dLabel">
+                
+                <div class="notification-heading"><h3 class="menu-title"><b>Keranjang Anda</b></h3>
+                terdapat 4 barang 
+                </div>
+                <li class="divider"></li>
+               <div class="notifications-wrapper">
+                <img src="image/ace.png" class="img-responsive">
+               </div>
+                <li class="divider"></li>
+                <div class="notification-footer"><a href="cart.html"><h4 class="menu-title">Lanjutkan Pembayaran<i class="glyphicon glyphicon-circle-arrow-right"></i></h4></a></div>
+              </ul>
+              
+
+
+        <!-- </li> -->
+      </ul>
+    </div>
+ </nav>
+
+
+ <div class="modal fade" id="myModalMasuk" role="dialog">
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h4><span class="glyphicon glyphicon-user"></span> Masuk</h4>
+          </div>
+
+          <div class="modal-body">
+            <form role="form">
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Masukkan Email" required="">
+              </div>
+
+              <div class="form-group">
+                <input type="password" class="form-control" id="password" placeholder="Masukkan Kata Sandi" required="">
+              </div>
+            </form>
+                <a href="donasi.html" style="text-decoration:none; color:black"><button class="btn btn-block">Masuk
+                  <span class="glyphicon"></span></button> 
+                </a>
+                <a href="#"><i class="sandi"> Lupa Kata Sandi ? </i> </a>
+          </div>
+
+          <div class="modal-footer">
+          <div class="btn-group btn-group-justified">
+              <a href="#" class="btn btn-primary btn-default ">
+                <i class="fa fa-facebook" aria-hidden="true"></i> Masuk dengan Facebook
+              </a>
+
+              <a href="donasi.html" class="btn btn-danger btn-default">
+                <i class="fa fa-google-plus" aria-hidden="true"></i>Masuk dengan Google+
+              </a>
+          </div>
+          </div>
+      </div>
+
+    </div>
+  </div>  
+
+
+<!-- MODAL -->
+ <div class="modal fade" id="myModalMakna" role="dialog" aria-labelledby="myModalMakna" tabindex="-1">
+      <div class="modal-dialog">
+
+      <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h4><span class="glyphicon glyphicon-user"></span> Masuk</h4>
+          </div>
+
+          <div class="modal-body">
+            <form role="form">
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Masukkan Email" required="">
+              </div>
+
+              <div class="form-group">
+                <input type="password" class="form-control" id="password" placeholder="Masukkan Kata Sandi" required="">
+              </div>
+            </form>
+                <a href="donasi.html" style="text-decoration:none; color:black"><button class="btn btn-block">Masuk
+                  <span class="glyphicon"></span></button> 
+                </a>
+                <a href="#"><i class="sandi"> Lupa Kata Sandi ? </i> </a>
+          </div>
+
+          <div class="modal-footer">
+          <div class="btn-group btn-group-justified">
+              <a href="#" class="btn btn-primary btn-default ">
+                <i class="fa fa-facebook" aria-hidden="true"></i> Masuk dengan Facebook
+              </a>
+
+              <a href="donasi.html" class="btn btn-danger btn-default">
+                <i class="fa fa-google-plus" aria-hidden="true"></i>Masuk dengan Google+
+              </a>
+          </div>
+          </div>
+      </div>
+
+    </div>
+  </div>  
+
+<!-- HABIS -->
+
+
+
+<div class="under-navbar">
+	<div class="container-fluid">
+	    <ol class="breadcrumb">
+	      <li><a href="#">Home</a></li>
+	      <li class="active">Kerajinan</li>
+	      <li class="active">Aksesoris</li>
+	      <li class="active">Keranjang Rotan</li>
+	    </ol>
+
+
+	    <div class="col-sm-12">
+		    <div class=" col-sm-5">
+				<div class="clearfix" id="content"  >
+			    <div class="clearfix">
+			        <a href="image/detail/big1.png" class="jqzoom" rel='gal1' >
+			            <img src="image/detail/big1.png" style="width:100%; border: 4px solid #666;">
+			        </a>
+				
+			    </div>
+				<br/>
+			        <div class="clearfix" >
+				<ul id="thumblist" class="clearfix" >
+					<li><a class="zoomThumbActive" href='javascript:void(0);' rel="{gallery: 'gal1', smallimage: '.image/detail/small.png',largeimage: '.image/detail/big1.png'}"><img src='image/detail/smallest.png' style="width: 50px;"></a></li>
+					<li><a href='javascript:void(0);' rel="{gallery: 'gal1', smallimage: './imgProd/triumph_small2.jpg',largeimage: './imgProd/triumph_big2.jpg'}"><img src='imgProd/thumbs/triumph_thumb2.jpg'></a></li>
+					<li><a  href='javascript:void(0);' rel="{gallery: 'gal1', smallimage: './imgProd/triumph_small3.jpg',largeimage: './imgProd/triumph_big3.jpg'}"><img src='imgProd/thumbs/triumph_thumb3.jpg'></a></li>
+				</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4" id="edisi" ">
+			<h2>Keranjang Rotan </h2>
+      <i>Anda mengetahui makna barang ini?</i>
+        <a href="#myModalMakna"> <button type="button" class="btn btn-info btn-block" data-toggle="modal" data-target="#myModalMakna">Kenali Makna</button></a> 
+
+
+       <div class="text-muted">Mari mengenal makna barang daerah yang ingin anda beli terlebih dahulu</div> <hr>     
+      Tersedia <b> 20 Pasang</b><br>
+      Harga satuan<b>Rp 200.000</b><br><br>
+
+      <form class="form-inline">
+         <div class="form-group">
+          <label>Jumlah</label>
+        <input type="text" class="form-control" id="usr" placeholder="5"><br>  </div></form>       
+      <hr>
+      Total Harga <strong>Rp 1.300.000</strong><br>
+      <hr>
+
+      <button type="button" class="btn btn-danger" style="border-radius: 0; height: 40px">Tambah Ke Keranjang</button>
+      <a href="cart.html" style="text-decoration: none;"><button type="button" class="btn btn-warning" style="border-radius: 0; height: 40px">Beli Sekarang</button></a><br>
+		</div>
+
+    <div class="col-sm-3">
+        <img src="image/panjang.png" class="img-responsive">
+    </div>
+	</div>
+</div>
+
+<div class="detailnya-produk">	
+	<div class="container-fluid">
+
+	<div class="tabs">
+	  <input type="radio" name="tabs" id="tabone" checked="checked">
+	  <label for="tabone">Detail Produk</label>
+	  <div class="tab" style="color: black;">
+	    <h3>Deskripsi Produk</h3>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	    <hr>
+	    <h3>Kegunaan</h3>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	    <br>
+	    <p class="text-muted">Produk didaftarkan 06 Mei 2016 <a href="#"><b>Laporkan Produk</b></a></p>
+	  </div>
+	  
+	  <input type="radio" name="tabs" id="tabtwo">
+	  <label for="tabtwo">Ulasan</label>
+	  <div class="tab" style="color: black;">
+		  <div class="media">
+		    <div class="media-left">
+		      <img src="img_avatar1.png" class="media-object" style="width:45px">
+		    </div>
+		    <div class="media-body">
+		      <h4 class="media-heading">John Doe <small><i>Posted on February 19, 2016</i></small></h4>
+		      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      
+	  </div>
+	  
+	</div>
+	  </div>
+	  
+	  <input type="radio" name="tabs" id="tabthree">
+	  <label for="tabthree">Kebijakan Toko</label>
+	  <div class="tab">
+	    <h1>Tab Three Content</h1>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	  </div>
+	</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+<div class="panel panel-body"  style="border-bottom: 1px solid grey">
+<div class="col-sm-4">
+		  <div class="media">
+		    <div class="media-left">
+		      <img src="image/icon.png" class="media-object" style="width:100px;">
+		    </div>
+		    <div class="media-body">
+		      <h4 class="media-heading">Toko Mas Kempul</h4>
+		      <p>Lokasi: Jakarta</p>
+      
+	  </div>
+	  
+	</div>
+</div>
+<div class="col-sm-8">
+
+		<div class="col-sm-2" >
+          <div class="thumbnail">
+            <a href="detail.html"><img src="image/aksesoris/1.png" class="img-responsive" ></a>
+          </div>
+        </div>                
+
+        <div class="col-sm-2" >
+          <div class="thumbnail">
+            <a href="detail.html"><img src="image/fashion/2.png" class="img-responsive" ></a>
+          </div>
+        </div>  
+
+                <div class="col-sm-2" >
+          <div class="thumbnail">
+            <a href="detail.html"><img src="image/sepatu/1.png" class="img-responsive" ></a>
+          </div>
+        </div> 
+
+                <div class="col-sm-2" >
+          <div class="thumbnail">
+            <a href="detail.html"><img src="image/aksesoris/2.png" class="img-responsive" ></a>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+        <button type="button" class="btn btn-info">Produk Lainnya Toko Ini</button>
+
+        </div>
+</div>
+</div>
+<br>
+    <b>Produk Menarik Lainnya</b>
+    <div id="promo" class="produk-dilihat">
+
+     <br>
+    <div class="col-sm-2" >
+          <div class="thumbnail">
+            <a href="detail.html"><img src="image/aksesoris/3.png" class="img-responsive" ></a>
+            <div class="tulisan-katalog">
+        
+              <a href="#"><b>Barang Kalalla Kkak </b>
+              <p> Rp 250.000 <span style="display: inline-block; width:50px"></span>(Toko)</p></a>
+              <p><img src="image/rating/5bintang.png" class="img-responsive stars5"></p>
+            </div>
+          </div>
+        </div>                
+
+        <div class="col-sm-2" >
+          <div class="thumbnail">
+            <a href="detail.html"><img src="image/sepatu/2.png" class="img-responsive" ></a>
+            <div class="tulisan-katalog">
+        
+              <a href="#"><b>Barang Kalalla Kkak </b>
+              <p> Rp 250.000 <span style="display: inline-block; width:50px"></span>(Toko)</p></a>
+              <p><img src="image/rating/5bintang.png" class="img-responsive stars5"></p>
+            </div>
+          </div>
+        </div>  
+
+        <div class="col-sm-2" >
+          <div class="thumbnail">
+            <a href="detail.html"><img src="image/fashion/1.png" class="img-responsive" ></a>
+            <div class="tulisan-katalog">
+        
+              <a href="#"><b>Barang Kalalla Kkak </b>
+              <p> Rp 250.000 <span style="display: inline-block; width:50px"></span>(Toko)</p></a>
+              <p><img src="image/rating/5bintang.png" class="img-responsive stars5"></p>
+            </div>
+          </div>
+        </div>  
+
+        <div class="col-sm-2" >
+          <div class="thumbnail">
+            <a href="detail.html"><img src="image/fashion/3.png" class="img-responsive" ></a>
+            <div class="tulisan-katalog">
+        
+              <a href="#"><b>Barang Kalalla Kkak </b>
+              <p> Rp 250.000 <span style="display: inline-block; width:50px"></span>(Toko)</p></a>
+              <p><img src="image/rating/5bintang.png" class="img-responsive stars5"></p>
+            </div>
+          </div>
+        </div>  
+
+        <div class="col-sm-2" >
+          <div class="thumbnail">
+            <a href="detail.html"><img src="image/fashion/5.png" class="img-responsive" ></a>
+            <div class="tulisan-katalog">
+        
+              <a href="#"><b>Barang Kalalla Kkak </b>
+              <p> Rp 250.000 <span style="display: inline-block; width:50px"></span>(Toko)</p></a>
+              <p><img src="image/rating/5bintang.png" class="img-responsive stars5"></p>
+            </div>
+          </div>
+        </div>  
+
+        <div class="col-sm-2" >
+          <div class="thumbnail">
+            <a href="detail.html"><img src="image/aksesoris/2.png" class="img-responsive" ></a>
+            <div class="tulisan-katalog">
+        
+              <a href="#"><b>Barang Kalalla Kkak </b>
+              <p> Rp 250.000 <span style="display: inline-block; width:50px"></span>(Toko)</p></a>
+              <p><img src="image/rating/5bintang.png" class="img-responsive stars5"></p>
+            </div>
+          </div>
+        </div>  
+
+    </div>
+</div>
+
+
+</div>
+
+<footer class="footer" id="footer">
+<div class="container-fluid">
+  <div class="langganan">
+  <div class="row">
+    <div class="col-sm-4 text-left">
+        <h3> Berlangganan </h3>
+        
+          Dapatkan informasi terbaru dan bermanfaat yang akan kami bagikan kepada anda
+          <div class="content">
+          <br>
+            <div class="input-group">
+              <input id="email" name="email" type="email" placeholder="Masukkan Email Anda" class="form-control" required />
+              <span class="input-group-btn">
+                <button id="btn-langganan" class="btn btn-primary">Langganan</button>
+              </span>
+            </div><br>
+          </div>
+      </div>
+      <div class="col-sm-4">
+
+        <h3>Metode Pembayaran</h3>
+
+      </div>
+
+      <div class="col-sm-4">
+        <h3>Jasa Pengiriman</h3>
+
+      </div>
+
+
+    </div>
+          <br><hr>
+    <div class="row">
+
+      <div class="col-sm-3" id="footer">
+        <h3>Tentang Kami</h3>
+        
+        <p>
+            <a href="carakerja.html"> Apa yang kami lakukan?</a> <br>
+            <div class="space"> </div>
+            <a href="mitra.html"> Mitra Kami</a>
+        </p><br>    
+      </div>
+
+      <div class="col-sm-3" id="footer">
+        <h3>Layanan Pelanggan</h3>
+       <p>
+            <a href="faq.html"> FAQ</a></p>
+        <h3>Ketentuan</h3>
+        <p>
+          <a href="hak.html">Hak Kewajiban</a>
+        </p><br>      
+      </div>
+
+            <div class="col-sm-3" id="footer">
+        <h3>Layanan Pengguna</h3>
+       <p>
+            <a href="faq.html"> FAQ</a></p>
+        <h3>Ketentuan</h3>
+        <p>
+          <a href="hak.html">Hak Kewajiban</a>
+        </p><br>      
+      </div>
+
+      <div class="col-sm-3" id="footer">
+        <h3>Temukan Kami</h3>
+
+
+        <span class=" glyphicon glyphicon-envelope"></span> <br> 
+        <span class="glyphicon glyphicon-phone-alt"></span> +6281 335 880 847<br>
+         <div class="media">
+<!--           <a href="#"><img src="D:/LittleTree/pics/logo/fb.png" width="30" height="30"> </a>
+          <a href="#"><img src="D:/LittleTree/pics/logo/google.png" width="30" height="30"> </a>
+          <a href="#"><img src="D:/LittleTree/pics/logo/twitter.png" width="30" height="30"> </a> -->
+        </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+  <div class="dropup" style="position:fixed;bottom:30px;right:80px;margin:0;padding:0px 0px;">
+    <a href="#" style="text-decoration: none;"><img src="image/msg.png" class="img-responsive dropdown-toggle" data-toggle="dropdown" style="position:fixed;bottom:15px;right:15px;margin:0;padding:0px 0px; width: 60px"><br>Hubungi<br>kami</a>
+<!--     <ul class="dropdown-menu">
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li class="divider"></li>
+        <li><a href="#">About Us</a></li>
+    </ul> -->
+  </div>
+</footer>
+  	<script src="js/carousel.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function() {
+	$('.jqzoom').jqzoom({
+            zoomType: 'reverse',
+            lens:true,
+            preloadImages: false,
+            alwaysOn:false
+        });
+	//$('.jqzoom').jqzoom();
+});
+
+
+</script>
+</body>
+</html>

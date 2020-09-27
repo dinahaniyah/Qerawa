@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Qerawa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="css/bootstrap.min.css" rel="stylesheet"></link>
+  <link href="css/style.css" rel="stylesheet"></link>
+  <link href="reset.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+</head>
+
+
+
+<body>
+<!-- NAVBAR   -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-header">
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    <a class="navbar-brand" href="index.html"> <img src="image/logo.png" class="img-responsive"></a>
+    </div>
+<!-- KATEGORI -->
+<!--     <a href="#menu" id="toggle"><span></span></a>
+
+    <div id="menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+ -->
+
+
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+          <ul class="dropdown-menu koloko" style="text-transform: none;">
+            <li><a href="katalog.html">Kerajinan</a></li>
+            <li><a href="katalog.html">Perabotan </a></li>
+            <li><a href="katalog.html">Dasar Kain Dan Fashion</a></li>
+            <li><a href="katalog.html">Kuliner</a></li>
+            <li><a href="katalog.html">Kesehatan</a></li>
+          </ul>
+        </li>
+      </ul>    
+      <form class="navbar-form navbar-left" role="search" id="search">
+            <div class="input-group"  >
+              <input type="text" placeholder="Apa Yang Anda Cari Hari Ini?" class="form-control" style="border-radius: 0; font-size: 16px" />
+              <span class="input-group-btn">
+                <button id="search" class="btn btn-primary btn-block" ><span class="glyphicon glyphicon-search"></span></button>
+              </span>
+            </div>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <!-- <li>  -->
+          <a href="daftar.html"> <button class="btn btnatas btn-primary">Daftar</button></a> 
+          <a href="#myModalMasuk"> <button class="btn btnatas btn-success" data-toggle="modal" data-target="#myModalMasuk">Masuk</button></a> 
+          
+          <!-- <div class="dropdown"> -->
+          <button data-toggle="dropdown" id="dLabel" data-target="#" href="/page.html" class="btn btncart btn-default"> <span class="badge-cart">4</span><span class="glyphicon glyphicon-shopping-cart"></span>Keranjang</button>
+
+
+              <ul class="dropdown-menu notifications" role="menu" aria-labelledby="dLabel">
+                
+                <div class="notification-heading"><h3 class="menu-title"><b>Keranjang Anda</b></h3>
+                terdapat 4 barang 
+                </div>
+                <li class="divider"></li>
+               <div class="notifications-wrapper">
+                <img src="image/ace.png" class="img-responsive">
+               </div>
+                <li class="divider"></li>
+                <div class="notification-footer"><a href="cart.html"><h4 class="menu-title">Lanjutkan Pembayaran<i class="glyphicon glyphicon-circle-arrow-right"></i></h4></a></div>
+              </ul>
+              
+
+
+        <!-- </li> -->
+      </ul>
+    </div>
+ </nav>
+
+
+<div class="under-navbar">
+  <div class="container-fluid">
+    <div class="col-sm-3" id="filertotal" >
+      <div id="filter-utama" class="breadcrumb"><b> FILTER PRODUK </b></div>
+      <div class="filter">
+        <div class="filter-1">
+          <h4 style="text-align: center;">Harga</h4>
+          <img src="image/1234.png" class="img-responsive">
+        </div>
+
+        <div class="filter-1">
+          <h4 style="text-align: center;">Material</h4>
+            <form action="" class="material">
+              <input type="checkbox" name="material" value="Logam"> Logam<br>
+              <input type="checkbox" name="material" value="Plastik"> Plastik<br>
+              <input type="checkbox" name="material" value="Rotan"> Rotan<br>
+              <input type="checkbox" name="material" value="Kayu"> Kayu Jati<br>
+              <input type="checkbox" name="material" value="Logam"> Logam<br>
+              <input type="checkbox" name="material" value="Plastik"> Plastik<br>
+              <input type="checkbox" name="material" value="Rotan"> Rotan<br>
+              <input type="checkbox" name="material" value="Kayu"> Kayu Jati<br>
+            </form>
+        </div>
+
+        <div class="filter-1">
+          <h4 style="text-align: center;">Daerah</h4>
+            <form action="" class="material">
+              <input type="checkbox" name="material" value="Logam"> Jawa Tengah<br>
+              <input type="checkbox" name="material" value="Plastik">Jawa Timur<br>
+              <input type="checkbox" name="material" value="Rotan"> Kalimantan Barat<br>
+              <input type="checkbox" name="material" value="Kayu"> Sumatera Selatan<br>
+              <input type="checkbox" name="material" value="Logam"> Yogyakarta<br>
+              <input type="checkbox" name="material" value="Plastik">Irian Jaya<br>
+              <input type="checkbox" name="material" value="Rotan"> Lombok <br>
+              <input type="checkbox" name="material" value="Kayu">Sulawesi<br>
+            </form>
+        </div>
+
+        <div class="filter-1">
+          <h4 style="text-align: center;">Rating</h4>
+          <img src="image/bintang.png" class="img-responsive" style="width: 80%">
+        </div>
+
+      </div>  
+    </div>
+
+  <div class="col-sm-9">
+    <ol class="breadcrumb">
+      <li><a href="#">Home</a></li>
+      <li class="active">Kerajinan</li>
+    </ol>
+
+    <div class="judul-produk" id="katalog-produk">
+      <h2>Pakaian dan Aksesoris</h2>
+      <div class="text-muted">Bagikan Halaman Ini 
+      <a href="#"><img src="image/social/facebook.png"> </a>
+      <a href="#"><img src="image/social/insta.png"> </a>
+      <a href="#"><img src="image/social/twitter.png"></a>
+      <a href="#"><img src="image/social/gmail.png"></a>  </div>
+    </div>
+
+      <div class="panel-body" id="sub-category">
+			  <div class="col-sm-2">
+          <a href=""><div class="media">
+            <div class="media-left media-top">
+              <img src="image/sub-category/aksesoris.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body">
+              <p>Aksesoris</p>
+            </div>
+          </div></a>
+		  	</div>	
+
+        <div class="col-sm-2">
+          <a href=""><div class="media">
+            <div class="media-left media-top">
+              <img src="image/sub-category/aksesoris.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body">
+              <p>Pakaian</p>
+            </div>
+          </div></a>
+        </div>  
+
+        <div class="col-sm-2">
+          <a href=""><div class="media">
+            <div class="media-left media-top">
+              <img src="image/sub-category/perhiasan.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body">
+              <p>Perhiasan</p>
+            </div>
+          </div></a>
+        </div>  
+
+        <div class="col-sm-2">
+          <a href=""><div class="media">
+            <div class="media-left media-top">
+              <img src="image/sub-category/sepatu.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body">
+              <p>Sepatu</p>
+            </div>
+          </div></a>
+        </div>  
+
+        <div class="col-sm-2">
+          <a href=""><div class="media">
+            <div class="media-left media-top">
+              <img src="image/sub-category/tas.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body">
+              <p>Tas</p>
+            </div>
+          </div></a>
+        </div>  
+
+
+      </div>
+        <hr> 
+        <div id="balada">
+        <div class="col-sm-3">
+          <div class="thumbnail">
+            <a href="detail.html"><img src="image/aksesoris/1.png" class="img-responsive"></a>
+            <div class="tulisan-katalog">
+           <br>
+              <a href="detail.html"><b>Barang Kalalla Kkak </b>
+              <p> Rp 250.000 <span style="display: inline-block; width:50px"></span>(Toko)</p></a>
+              <p><img src="image/rating/5bintang.png" class="img-responsive stars5"></p>
+            </div>
+          </div>
+        </div>  
+
+        <div class="col-sm-3">
+          <div class="thumbnail">
+            <a href="detail.html"><img src="image/aksesoris/2.png" class="img-responsive"></a>
+            <div class="tulisan-katalog">
+           <br>
+              <a href="detail.html"><b>Barang Kalalla Kkak </b>
+              <p> Rp 250.000 <span style="display: inline-block; width:50px"></span>(Toko)</p></a>
+              <p><img src="image/rating/5bintang.png" class="img-responsive stars5"></p>
+            </div>
+          </div>
+        </div>  
+
+        <div class="col-sm-3">
+          <div class="thumbnail">
+            <a href="detail.html"><img src="image/aksesoris/3.png" class="img-responsive"></a>
+            <div class="tulisan-katalog">
+           <br>
+              <a href="detail.html"><b>Barang Kalalla Kkak </b>
+              <p> Rp 250.000 <span style="display: inline-block; width:50px"></span>(Toko)</p></a>
+              <p><img src="image/rating/5bintang.png" class="img-responsive stars5"></p>
+            </div>
+          </div>
+        </div>  
+
+        <div class="col-sm-3">
+          <div class="thumbnail">
+            <a href="detail.html"><img src="image/fashion/1.png" class="img-responsive"></a>
+            <div class="tulisan-katalog">
+           <br>
+              <a href="detail.html"><b>Barang Kalalla Kkak </b>
+              <p> Rp 250.000 <span style="display: inline-block; width:50px"></span>(Toko)</p></a>
+              <p><img src="image/rating/5bintang.png" class="img-responsive stars5"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="thumbnail">
+            <a href="detail.html"><img src="image/sepatu/1.png" class="img-responsive"></a>
+            <div class="tulisan-katalog">
+           <br>
+              <a href="detail.html"><b>Barang Kalalla Kkak </b>
+              <p> Rp 250.000 <span style="display: inline-block; width:50px"></span>(Toko)</p></a>
+              <p><img src="image/rating/5bintang.png" class="img-responsive stars5"></p>
+            </div>
+          </div>
+        </div>  
+
+        <div class="col-sm-3">
+          <div class="thumbnail">
+            <a href="detail.html"><img src="image/aksesoris/3.png" class="img-responsive"></a>
+            <div class="tulisan-katalog">
+           <br>
+              <a href="detail.html"><b>Barang Kalalla Kkak </b>
+              <p> Rp 250.000 <span style="display: inline-block; width:50px"></span>(Toko)</p></a>
+              <p><img src="image/rating/5bintang.png" class="img-responsive stars5"></p>
+            </div>
+          </div>
+        </div>  
+
+        <div class="col-sm-3">
+          <div class="thumbnail">
+            <a href="detail.html"><img src="image/sepatu/2.png" class="img-responsive"></a>
+            <div class="tulisan-katalog">
+           <br>
+              <a href="detail.html"><b>Barang Kalalla Kkak </b>
+              <p> Rp 250.000 <span style="display: inline-block; width:50px"></span>(Toko)</p></a>
+              <p><img src="image/rating/5bintang.png" class="img-responsive stars5"></p>
+            </div>
+          </div>
+        </div>          
+
+        <div class="col-sm-3">
+          <div class="thumbnail">
+            <a href="detail.html"><img src="image/sepatu/3.png" class="img-responsive"></a>
+            <div class="tulisan-katalog">
+           <br>
+              <a href="detail.html"><b>Barang Kalalla Kkak </b>
+              <p> Rp 250.000 <span style="display: inline-block; width:50px"></span>(Toko)</p></a>
+              <p><img src="image/rating/5bintang.png" class="img-responsive stars5"></p>
+            </div>
+          </div>
+        </div>   
+
+
+
+        </div>
+		</div>
+  </div>
+</div>  
+
+
+	</div>	
+</div>
+
+<footer class="footer" id="footer">
+<div class="container-fluid">
+  <div class="langganan">
+  <div class="row">
+    <div class="col-sm-4 text-left">
+        <h3> Berlangganan </h3>
+        
+          Dapatkan informasi terbaru dan bermanfaat yang akan kami bagikan kepada anda
+          <div class="content">
+          <br>
+            <div class="input-group">
+              <input id="email" name="email" type="email" placeholder="Masukkan Email Anda" class="form-control" required />
+              <span class="input-group-btn">
+                <button id="btn-langganan" class="btn btn-primary">Langganan</button>
+              </span>
+            </div><br>
+          </div>
+      </div>
+      <div class="col-sm-4">
+
+        <h3>Metode Pembayaran</h3>
+
+      </div>
+
+      <div class="col-sm-4">
+        <h3>Jasa Pengiriman</h3>
+
+      </div>
+
+
+    </div>
+          <br><hr>
+    <div class="row">
+
+      <div class="col-sm-3" id="footer">
+        <h3>Tentang Kami</h3>
+        
+        <p>
+            <a href="carakerja.html"> Apa yang kami lakukan?</a> <br>
+            <div class="space"> </div>
+            <a href="mitra.html"> Mitra Kami</a>
+        </p><br>    
+      </div>
+
+      <div class="col-sm-3" id="footer">
+        <h3>Layanan Pelanggan</h3>
+       <p>
+            <a href="faq.html"> FAQ</a></p>
+        <h3>Ketentuan</h3>
+        <p>
+          <a href="hak.html">Hak Kewajiban</a>
+        </p><br>      
+      </div>
+
+            <div class="col-sm-3" id="footer">
+        <h3>Layanan Pengguna</h3>
+       <p>
+            <a href="faq.html"> FAQ</a></p>
+        <h3>Ketentuan</h3>
+        <p>
+          <a href="hak.html">Hak Kewajiban</a>
+        </p><br>      
+      </div>
+
+      <div class="col-sm-3" id="footer">
+        <h3>Temukan Kami</h3>
+
+
+        <span class=" glyphicon glyphicon-envelope"></span> <br> 
+        <span class="glyphicon glyphicon-phone-alt"></span> +6281 335 880 847<br>
+         <div class="media">
+<!--           <a href="#"><img src="D:/LittleTree/pics/logo/fb.png" width="30" height="30"> </a>
+          <a href="#"><img src="D:/LittleTree/pics/logo/google.png" width="30" height="30"> </a>
+          <a href="#"><img src="D:/LittleTree/pics/logo/twitter.png" width="30" height="30"> </a> -->
+        </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <div class="dropup" style="position:fixed;bottom:30px;right:80px;margin:0;padding:0px 0px;">
+    <a href="#" style="text-decoration: none;"><img src="image/msg.png" class="img-responsive dropdown-toggle" data-toggle="dropdown" style="position:fixed;bottom:15px;right:15px;margin:0;padding:0px 0px; width: 60px"><br>Hubungi<br>kami</a>
+<!--     <ul class="dropdown-menu">
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li class="divider"></li>
+        <li><a href="#">About Us</a></li>
+    </ul> -->
+  </div>
+</footer>
+      <script src="js/carousel.js"></script>
+</body>
+</html>

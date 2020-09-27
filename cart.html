@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Qerawa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="css/bootstrap.min.css" rel="stylesheet"></link>
+  <link href="css/style.css" rel="stylesheet"></link>
+  <link href="reset.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+</head>
+
+
+
+<body>
+<!-- NAVBAR   -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-header">
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    <a class="navbar-brand" href="index.html"> <img src="image/logo.png" class="img-responsive"></a>
+    </div>
+<!-- KATEGORI -->
+<!--     <a href="#menu" id="toggle"><span></span></a>
+
+    <div id="menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+ -->
+
+
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+          <ul class="dropdown-menu koloko" style="text-transform: none;">
+            <li><a href="katalog.html">Kerajinan</a></li>
+            <li><a href="katalog.html">Perabotan </a></li>
+            <li><a href="katalog.html">Dasar Kain Dan Fashion</a></li>
+            <li><a href="katalog.html">Kuliner</a></li>
+            <li><a href="katalog.html">Kesehatan</a></li>
+          </ul>
+        </li>
+      </ul>    
+      <form class="navbar-form navbar-left" role="search" id="search">
+            <div class="input-group"  >
+              <input type="text" placeholder="Apa Yang Anda Cari Hari Ini?" class="form-control" style="border-radius: 0; font-size: 16px" />
+              <span class="input-group-btn">
+                <button id="search" class="btn btn-primary btn-block" ><span class="glyphicon glyphicon-search"></span></button>
+              </span>
+            </div>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <!-- <li>  -->
+          <a href="daftar.html"> <button class="btn btnatas btn-primary">Daftar</button></a> 
+          <a href="#myModalMasuk"> <button class="btn btnatas btn-success" data-toggle="modal" data-target="#myModalMasuk">Masuk</button></a> 
+          
+          <!-- <div class="dropdown"> -->
+          <button data-toggle="dropdown" id="dLabel" data-target="#" href="/page.html" class="btn btncart btn-default"> <span class="badge-cart">4</span><span class="glyphicon glyphicon-shopping-cart"></span>Keranjang</button>
+
+
+              <ul class="dropdown-menu notifications" role="menu" aria-labelledby="dLabel">
+                
+                <div class="notification-heading"><h3 class="menu-title"><b>Keranjang Anda</b></h3>
+                terdapat 4 barang 
+                </div>
+                <li class="divider"></li>
+               <div class="notifications-wrapper">
+                <img src="image/ace.png" class="img-responsive">
+               </div>
+                <li class="divider"></li>
+                <div class="notification-footer"><a href="cart.html"><h4 class="menu-title">Lanjutkan Pembayaran<i class="glyphicon glyphicon-circle-arrow-right"></i></h4></a></div>
+              </ul>
+              
+
+
+        <!-- </li> -->
+      </ul>
+    </div>
+ </nav>
+
+
+ <!-- MODAL -->
+  <!-- Modal -->
+  <div class="modal fade" id="editModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Ganti Pesanan</h4>
+        </div>
+        <div class="modal-body">
+            <div class="col-sm-2">
+              <img src="image/aksesoris/putih-kalimantan.png" class="img-responsive" style="width: 100%;">
+            </div>
+            <div class="col-sm-10">
+             <b> KERANJANG ROTAN-SMALL</b><br>
+             (toko)
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<!-- HABIS -->
+
+<div class="under-navbar">
+  <div class="container-fluid">
+    <div class="panel cart-aja" id="cart" >
+      <h2>Transaksi Pembeli</h2>
+    </div>
+<br>
+    <div class="panel panel-body cart-aja" id="cart" >
+      <div class="panel panel-body keranjang">
+        <h3>Keranjang Pembelian</h3>
+        <!-- Jika anda ingin melakukan pembayaran silahkan kebagian bawah -->
+        <br>
+        <div class=" panel panel-body kotak-cart">
+          <input type="checkbox" name="">
+            <div class="col-sm-2">
+              <img src="image/fashion/1.png" class="img-responsive" style="width: 100%;">
+            </div>
+            <div class="col-sm-4">
+             <b> Pakaian Khas XXXX</b><br>
+             (toko)
+                <div class="text-muted"><br>
+                <b>Keterangan</b><br>
+                  Buat yang maksimal untuk acara akakaka 
+                </div>
+                          <br>
+                 <a href="#" data-toggle="modal" data-target="#editModal"><span class=" glyphicon glyphicon-pencil"></span>Edit</a> <span style="display: inline-block; width:30px"></span>
+                 <a href="#"><span class=" glyphicon glyphicon-trash"></span>Hapus </a>
+
+            </div>
+            <div class="col-sm-3">
+              <b>2 item</b> <span style="display: inline-block; width:20px"></span> @Rp 65.000
+              <br><br>
+                <div class="form-group">
+                  <label for="sel1">Jasa Pengirim:</label>
+                  <select class="form-control" id="sel1">
+                    <option>JNE</option>
+                    <option>POS</option>
+                    <option>GoJek</option>
+                  </select>
+                </div>
+            </div>   
+
+            <div class="col-sm-2">
+              <b>Total</b> <br> Rp 130.000
+            </div> 
+
+      </div>
+
+
+        <div class=" panel panel-body kotak-cart">
+          <input type="checkbox" name="">
+            <div class="col-sm-2">
+              <img src="image/aksesoris/1.png" class="img-responsive" style="width: 100%;">
+            </div>
+            <div class="col-sm-4">
+             <b> Gelang Kalimantan</b><br>
+             (toko)
+                <div class="text-muted"><br>
+                <b>Keterangan</b><br>
+                  Warnanya yang xxxx ya kak 
+                </div>
+                          <br>
+                 <a href="#" data-toggle="modal" data-target="#editModal"><span class=" glyphicon glyphicon-pencil"></span>Edit</a> <span style="display: inline-block; width:30px"></span>
+                 <a href="#"><span class=" glyphicon glyphicon-trash"></span>Hapus </a>
+
+            </div>
+            <div class="col-sm-3">
+              <b>1 item</b> <span style="display: inline-block; width:20px"></span> @Rp 160.000
+              <br><br>
+                <div class="form-group">
+                  <label for="sel1">Jasa Pengirim:</label>
+                  <select class="form-control" id="sel1">
+                    <option>POS</option>
+                    <option>JNE</option>
+                    <option>GoJek</option>
+                  </select>
+                </div>
+            </div>   
+
+            <div class="col-sm-2">
+              <b>Total</b> <br> Rp 160.000
+            </div> 
+</div>
+</div>
+
+<!-- <div class="kotak-cart"> -->
+      <div class="judul-checkout"><h3><b>Lanjut Pembayaran</b></h3></div>
+    <div class="col-sm-6">
+      <div class="panel panel-body checkout">
+        <b>DATA PEMBELI</b><br><br>
+
+        Dapatkan Kemudahan dengan Beli dengan menggunakan akun anda<br>
+        <a href=""> daftar/masuk</a>
+        <hr>
+        atau
+        Beli tanpa menggunakan akun?
+        <div class="form-group">
+        <br>
+            <div class="form-group">
+              Nama Kontak
+              <input type="email" class="form-control" id="email">
+            </div>
+
+            <div class="form-group">
+              No Telp
+              <input type="password" class="form-control" id="pwd">
+            </div>
+
+            <div class="form-group">
+              Email
+              <input type="password" class="form-control" id="pwd">
+            </div>
+        </div>
+              
+
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="panel panel-body checkout">
+        <b>METODE PEMBAYARAN</b><br><br>
+        <div class="half">
+
+            <div class="tab blue" id="blabal">
+              <input id="tab-four" type="radio" name="tabs2" class="radioaja">
+              <label for="tab-four" class="radioaja1">Transfer Bank</label>
+              <div class="tab-content">
+                <p>Transfer Bank<br>
+                Rekening : 29048-093-39-3847<br>Atas Nama: PT. Qerawa</p>
+                <form action="">
+                  <input type="radio" name="gender" value="a" class="bank"> Bank A<br>
+                  <input type="radio" name="gender" value="b" class="bank"> Bank B<br>
+                  <input type="radio" name="gender" value="c" class="bank"> Bank C
+                </form>
+
+              </div>
+            </div>
+            <div class="tab blue">
+              <input id="tab-five" type="radio" name="tabs2" class="radioaja">
+              <label for="tab-five" class="radioaja1">Kartu Kredit</label>
+              <div class="tab-content">
+                <p>1.Lorem ipsum dolor sit amet, <br>2.consectetur adipisicing elit. Tenetur, architecto,<br>3. explicabo perferendis nostrum, <br>4. maxime impedit atque odit sunt pariatur.</p>
+              </div>
+            </div>
+            <div class="tab blue">
+              <input id="tab-six" type="radio" name="tabs2" class="radioaja">
+              <label for="tab-six" class="radioaja1">Mobile Banking</label>
+              <div class="tab-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <div class="panel panel-body checkout">
+      <b>RINGKASAN PEMBAYARAN</b><br><br>
+          <table class="table table-striped table-hover">
+            <thead>
+              <tr>
+                <th>Nama Barang</th>
+                <th>Jumlah</th>
+                <th>Total Harga Barang
+                <th>Biaya Jasa Pengiriman </th>
+                <th>Total Biaya</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Pakaian Tradisional XXX</td>
+                <td>2</td>
+                <td>Rp. 450.000</td>
+                <td>JNE(Rp. 25.000)</td>
+                <td>Rp. 3.600.000</td>
+              </tr>
+              <tr>
+                <td>Gelang Kalimantan</td>
+                <td>1</td>
+                <td>Rp. 160.000</td>
+                <td>Pos(Rp. 8.000)</td>
+                <td>Rp. 200.000</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+          TOTAL  <b>Rp 5.800.000</b><br>
+            <div class="col-sm-offset-4 col-sm-4">
+             <a href="invoice.html" style="text-decoration: none;"><button type="button" class="btn btn-info btn-block">Lanjut Pembayaran</button></a>
+            </div>
+
+      </div>
+
+    </div>
+
+  <div>
+</div>  
+
+
+	</div>	
+</div>
+<!-- <div class="dropup">
+  <a "><img src="image/msg.png" class="img-responsive" data-toggle="dropdown" style="position:fixed;bottom:5px;right:5px;margin:0;padding:0px 0px; width: 60px">GO BACK</a>
+      <ul class="dropdown-menu">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+      <li class="divider"></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+</div> -->
+  <div class="dropup" style="position:fixed;bottom:30px;right:80px;margin:0;padding:0px 0px;">
+    <a href="#" style="text-decoration: none;"><img src="image/msg.png" class="img-responsive dropdown-toggle" data-toggle="dropdown" style="position:fixed;bottom:15px;right:15px;margin:0;padding:0px 0px; width: 60px"><br>Hubungi<br>kami</a>
+<!--     <ul class="dropdown-menu">
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li class="divider"></li>
+        <li><a href="#">About Us</a></li>
+    </ul> -->
+  </div>
+</div>
+<footer class="footer" id="footer">
+<div class="container-fluid">
+  <div class="langganan">
+  <div class="row">
+    <div class="col-sm-4 text-left">
+        <h3> Berlangganan </h3>
+        
+          Dapatkan informasi terbaru dan bermanfaat yang akan kami bagikan kepada anda
+          <div class="content">
+          <br>
+            <div class="input-group">
+              <input id="email" name="email" type="email" placeholder="Masukkan Email Anda" class="form-control" required />
+              <span class="input-group-btn">
+                <button id="btn-langganan" class="btn btn-primary">Langganan</button>
+              </span>
+            </div><br>
+          </div>
+      </div>
+      <div class="col-sm-4">
+
+        <h3>Metode Pembayaran</h3>
+
+      </div>
+
+      <div class="col-sm-4">
+        <h3>Jasa Pengiriman</h3>
+
+      </div>
+
+
+    </div>
+          <br><hr>
+    <div class="row">
+
+      <div class="col-sm-3" id="footer">
+        <h3>Tentang Kami</h3>
+        
+        <p>
+            <a href="carakerja.html"> Apa yang kami lakukan?</a> <br>
+            <div class="space"> </div>
+            <a href="mitra.html"> Mitra Kami</a>
+        </p><br>    
+      </div>
+
+      <div class="col-sm-3" id="footer">
+        <h3>Layanan Pelanggan</h3>
+       <p>
+            <a href="faq.html"> FAQ</a></p>
+        <h3>Ketentuan</h3>
+        <p>
+          <a href="hak.html">Hak Kewajiban</a>
+        </p><br>      
+      </div>
+
+            <div class="col-sm-3" id="footer">
+        <h3>Layanan Pengguna</h3>
+       <p>
+            <a href="faq.html"> FAQ</a></p>
+        <h3>Ketentuan</h3>
+        <p>
+          <a href="hak.html">Hak Kewajiban</a>
+        </p><br>      
+      </div>
+
+      <div class="col-sm-3" id="footer">
+        <h3>Temukan Kami</h3>
+
+
+        <span class=" glyphicon glyphicon-envelope"></span> <br> 
+        <span class="glyphicon glyphicon-phone-alt"></span> +6281 335 880 847<br>
+         <div class="media">
+<!--           <a href="#"><img src="D:/LittleTree/pics/logo/fb.png" width="30" height="30"> </a>
+          <a href="#"><img src="D:/LittleTree/pics/logo/google.png" width="30" height="30"> </a>
+          <a href="#"><img src="D:/LittleTree/pics/logo/twitter.png" width="30" height="30"> </a> -->
+        </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+</footer>
+      <script src="js/carousel.js"></script>
+</body>
+</html>
